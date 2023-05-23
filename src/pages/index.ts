@@ -1,21 +1,23 @@
-import { Account } from "./Account/Account";
-import { BookDetails } from "./BookDetails/Bookdetails";
-import { CartBooks } from "./CartBooks/CartBooks";
-import { FavoritsBooks } from "./FavoritesBooks/FavoritesBooks";
-import { Home } from "./Home/Home";
-import { NotFound } from "./NotFound/NotFound";
-import { Register } from "./Register/Register";
-import { SearchBooks } from "./SearchBooks/SearchBooks";
-import { SignIn } from "./SignIn/SignIn";
+import { AccountPage } from "./AccountPage/AccountPage";
+import { BookPage } from "./BookPage/BookPage
+import { CartPage } from "./CartPage/CartPage";
+import { ErrorPage } from "./ErrorPage/ErrorPage";
+import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
+import { ForgotPage } from "./ForgotPage/ForgotPage";
+import { HomePage } from "./HomePage/HomePage";
+import { ResetPage } from "./ResetPage/ResetPage";
+import { SearchPage } from "./SearchPage/SearchPage";
+import { SignPage } from "./SignPage/SignPage";
 
 export {
-  Account,
-  BookDetails,
-  CartBooks,
-  FavoritsBooks,
-  Home,
-  NotFound,
-  Register,
-  SearchBooks,
-  SignIn,
+  AccountPage,
+  BookPage,
+  CartPage,
+  ErrorPage,
+  FavoritesPage,
+  ForgotPage,
+  HomePage,
+  ResetPage,
+  SearchPage,
+  SignPage,
 };
