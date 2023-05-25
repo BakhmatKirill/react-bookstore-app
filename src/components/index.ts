@@ -3,6 +3,7 @@ import { RequareAuth } from "./RequareAuth/RequareAuth";
 import { Title } from "./Title/Title";
 import { Header } from "./Header/Header";
 import { Footer } from "./Footer/Footer";
+import { Sign } from "./Sign/Sign";
 
 
 export { 
@@ -10,5 +11,6 @@ export {
   RequareAuth,
   Title,
   Header,
-  Footer
+  Footer,
+  Sign
 };
