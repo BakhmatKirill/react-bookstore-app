@@ -4,6 +4,9 @@ import { Title } from "./Title/Title";
 import { Header } from "./Header/Header";
 import { Footer } from "./Footer/Footer";
 import { Sign } from "./Sign/Sign";
+import { BookList } from "./BookList/BookList";
+import { BookListItem } from "./BookListItem/BookListItem";
+import { Subscribe } from "./Subscribe/Subscribe";
 
 
 export { 
@@ -12,5 +15,8 @@ export {
   Title,
   Header,
   Footer,
-  Sign
+  Sign,
+  BookList,
+  BookListItem,
+  Subscribe
 };
