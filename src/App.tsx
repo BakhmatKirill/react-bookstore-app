@@ -1,6 +1,10 @@
-import { RouterProvider } from "react-router";
-import { router } from "./routes";
+import { Header } from "./components";
+import { Wrapper } from "./ui";
 
 export const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <Wrapper>
+      <Header />
+    </Wrapper>
+  );
 };
