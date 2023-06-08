@@ -1,17 +1,6 @@
-import { useState } from "react";
-import { Menu, Header, Footer, Mailing, NewBooks } from "./components";
-import { Wrapper } from "./ui";
+import { RouterProvider } from "react-router";
+import { router } from "router";
 
 export const App = () => {
-  return (
-    <>
-      <Wrapper>
-        <Header />
-        <NewBooks />
-        <Mailing />
-        <Footer />
-      </Wrapper>
-      <Menu />
-    </>
-  );
+  return <RouterProvider router={router} />;
 };

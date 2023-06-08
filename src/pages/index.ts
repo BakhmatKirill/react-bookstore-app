@@ -1,5 +1,5 @@
 import { AccountPage } from "./AccountPage/AccountPage";
-import { BookPage } from "./BookPage/BookPage
+import { BookPage } from "./BookPage/BookPage";
 import { CartPage } from "./CartPage/CartPage";
 import { ErrorPage } from "./ErrorPage/ErrorPage";
 import { FavoritesPage } from "./FavoritesPage/FavoritesPage";
