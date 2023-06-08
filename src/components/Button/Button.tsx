@@ -1,5 +1,14 @@
-import React from "react";
+import { StyledButton } from "./styles";
 
-export const Button = () => {
-  return <div>Button</div>;
+interface Iprops {
+  children: string;
+  type: "button" | "submit" | "reset";
+  buttonWidth?: string;
+  buttonColor?: string;
+  backgroundColor?: string;
+  borderColor?: string;
+}
+
+export const Button = (props: Iprops) => {
+  return <StyledButton {...props}>{props.children}</StyledButton>;
 };

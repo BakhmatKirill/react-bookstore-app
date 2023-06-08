@@ -12,8 +12,10 @@ import { BookListItem } from "./BookListItem/BookListItem";
 import { Mailing } from "./Mailing/Mailing";
 import { NewBooks } from "./NewBooks/NewBooks";
 import { Menu } from "./Menu/Menu";
-
-
+import { CustomNavLink } from "components/CustomNavLink/CustomNavLink";
+import { Button } from "./Button/Button";
+import { Input } from "./Input/Input";
+import { Account } from "./Account/Account";
 
 export { 
   Layout,
@@ -29,5 +31,9 @@ export {
   Search,
   ThemeChanger,
   NewBooks,
-  Menu
+  Menu,
+  CustomNavLink,
+  Button,
+  Input,
+  Account
 };

@@ -14,7 +14,7 @@ export const StyledNav = styled.nav`
   }
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled(NavLink)`
   display: block;
   svg {
     path {
@@ -26,7 +26,7 @@ export const NavItem = styled.a`
   }
 `;
 
-export const ShoppingBagNavItem = styled.a`
+export const ShoppingBagNavItem = styled(NavLink)`
   display: block;
   svg {
     path {

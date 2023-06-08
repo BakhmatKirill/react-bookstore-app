@@ -33,13 +33,6 @@ export const Input = styled.input`
   background: ${Color.Primary_Background};
 `;
 
-export const Button = styled.button`
-  padding: 16px;
-  ${Typography.S1};
-  color: ${Color.Primary_Background};
-  background: ${Color.Primary};
-`;
-
 export const Title = styled.h2`
   max-width: 500px;
   margin-bottom: 8px;
