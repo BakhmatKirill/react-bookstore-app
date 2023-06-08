@@ -7,9 +7,11 @@ import { Search } from "./Search/Search";
 import { ThemeChanger } from "./ThemeChanger/ThemeChanger";
 import { Footer } from "./Footer/Footer";
 import { Sign } from "./Sign/Sign";
-import { BookList } from "./BookList/BookList";
+import { BooksList } from "./BooksList/BooksList";
 import { BookListItem } from "./BookListItem/BookListItem";
-import { Subscribe } from "./Subscribe/Subscribe";
+import { Mailing } from "./Mailing/Mailing";
+import { NewBooks } from "./NewBooks/NewBooks";
+
 
 
 export { 
@@ -19,10 +21,11 @@ export {
   Header,
   Footer,
   Sign,
-  BookList,
+  BooksList,
   BookListItem,
-  Subscribe,
+  Mailing,
   HeaderNavigation,
   Search,
-  ThemeChanger
+  ThemeChanger,
+  NewBooks
 };
