@@ -11,6 +11,7 @@ import { BooksList } from "./BooksList/BooksList";
 import { BookListItem } from "./BookListItem/BookListItem";
 import { Mailing } from "./Mailing/Mailing";
 import { NewBooks } from "./NewBooks/NewBooks";
+import { Menu } from "./Menu/Menu";
 
 
 
@@ -27,5 +28,6 @@ export {
   HeaderNavigation,
   Search,
   ThemeChanger,
-  NewBooks
+  NewBooks,
+  Menu
 };

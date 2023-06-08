@@ -7,7 +7,6 @@ export const BooksListItem = styled.figure`
   height: 454px;
   max-width: 352px;
   border-radius: 20px;
-  transition: all 0.2s ease-in-out;
   cursor: pointer;
   ${Media.EL} {
     height: 405px;
@@ -51,6 +50,7 @@ export const Image = styled.img`
 
 export const ContentWrapper = styled.div`
   height: 170px;
+  padding: 0 5px;
 `;
 
 export const Title = styled.h3`
