@@ -1,29 +1,50 @@
-import { HeartIcon, ShoppingBagIcon, AccountIcon, BurgerMenuIcon } from "assets";
-import { NavItem, ShoppingBagNavItem, StyledNav, BurgerMenuNavItem } from "./styles";
-import { Color } from "ui";
-import { useToggle } from "hooks";
+import { HeartIcon, ShoppingBagIcon, AccountIcon } from "assets";
+import { NavItem, ShoppingBagNavItem, StyledNav, Text, Amount, IconContainer } from "./styles";
 import { ROUTE } from "router";
+import { useWindowSize } from "hooks";
+import { getCartBooks, getFavoriteBooks, useAppSelector } from "store";
 
-export const HeaderNavigation = () => {
-  const [isOpen, toggleOpen] = useToggle();
-  const handleMenu = () => {
-    toggleOpen();
-  };
+interface IProps {
+  closeBurger: () => void;
+}
+
+export const HeaderNavigation = ({ closeBurger }: IProps) => {
+  const { width = 0 } = useWindowSize();
+  const isMobile = width > 992;
+
+  const { favorite } = useAppSelector(getFavoriteBooks);
+  const { cart } = useAppSelector(getCartBooks);
+
+  const favoriteLength = favorite.length;
+  const cartLength = cart.length;
 
   return (
     <StyledNav>
       <NavItem to={ROUTE.FAVORITES}>
-        <HeartIcon />
+        {isMobile ? (
+          <IconContainer>
+            <HeartIcon />
+            {favoriteLength > 0 && <Amount>{favoriteLength}</Amount>}
+          </IconContainer>
+        ) : (
+          <Text onClick={closeBurger}>Favorites</Text>
+        )}
       </NavItem>
+
       <ShoppingBagNavItem to={ROUTE.CART}>
-        <ShoppingBagIcon />
+        {isMobile ? (
+          <IconContainer>
+            <ShoppingBagIcon />
+            {cartLength > 0 && <Amount>{cartLength}</Amount>}
+          </IconContainer>
+        ) : (
+          <Text onClick={closeBurger}>Cart</Text>
+        )}
       </ShoppingBagNavItem>
+
       <NavItem to={ROUTE.ACCOUNT}>
-        <AccountIcon />
+        {isMobile ? <AccountIcon /> : <Text onClick={closeBurger}>Account</Text>}
       </NavItem>
-      <BurgerMenuNavItem type="button" onClick={handleMenu}>
-        <BurgerMenuIcon fill={Color.Primary} />
-      </BurgerMenuNavItem>
     </StyledNav>
   );
 };
