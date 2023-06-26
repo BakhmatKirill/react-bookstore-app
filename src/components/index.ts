@@ -16,6 +16,7 @@ import { CustomNavLink } from "components/CustomNavLink/CustomNavLink";
 import { Button } from "./Button/Button";
 import { Input } from "./Input/Input";
 import { Account } from "./Account/Account";
+import { BackArrowButton } from "./BackArrowButton/BackArrowButton";
 
 export { 
   Layout,
@@ -35,5 +36,6 @@ export {
   CustomNavLink,
   Button,
   Input,
-  Account
+  Account,
+  BackArrowButton
 };
