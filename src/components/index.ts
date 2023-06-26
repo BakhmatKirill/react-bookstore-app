@@ -7,6 +7,8 @@ import { Search } from "./Search/Search";
 import { ThemeChanger } from "./ThemeChanger/ThemeChanger";
 import { Footer } from "./Footer/Footer";
 import { Sign } from "./Sign/Sign";
+import { SignIn } from "./SignIn/SignIn";
+import { SignUp } from "./SignUp/SignUp";
 import { BooksList } from "./BooksList/BooksList";
 import { BookListItem } from "./BookListItem/BookListItem";
 import { Mailing } from "./Mailing/Mailing";
@@ -25,6 +27,8 @@ export {
   Header,
   Footer,
   Sign,
+  SignIn,
+  SignUp,
   BooksList,
   BookListItem,
   Mailing,
