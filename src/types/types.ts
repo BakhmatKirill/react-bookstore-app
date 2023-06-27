@@ -5,14 +5,14 @@ export interface IBook {
     subtitle: string;
     title: string;
     url: string;
-}
-
+  }
+  
 export interface INewBooks {
     error: string;
     total: string;
     books: IBook[];
-}
-
+  }
+  
 export interface IBookDetails {
     error: string;
     title: string;
@@ -30,10 +30,10 @@ export interface IBookDetails {
     image: string;
     url: string;
     pdf?: {
-    [key: string]: string;
-  };
-}
-
+      [key: string]: string;
+    };
+  }
+  
 export interface ICartItem {
     error: string;
     title: string;
@@ -51,20 +51,20 @@ export interface ICartItem {
     image: string;
     url: string;
     summary: number;
-}
-
+  }
+  
 export interface IResponseSearch {
     error: string;
     total: string;
     page: string;
     books: IBook[];
-}
-
+  }
+  
 export interface ISearchResult {
     searchValue: string | undefined;
     page: string | undefined;
-}
-
+  }
+  
 export interface IBookISBN13 {
     isbn13: string | undefined;
-}
+  }

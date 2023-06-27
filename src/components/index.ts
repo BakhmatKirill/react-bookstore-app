@@ -19,6 +19,8 @@ import { Button } from "./Button/Button";
 import { Input } from "./Input/Input";
 import { Account } from "./Account/Account";
 import { BackArrowButton } from "./BackArrowButton/BackArrowButton";
+import { Description } from "./Description/Description";
+import { BookDetails } from "./BookDetails/BookDetails";
 
 export { 
   Layout,
@@ -41,5 +43,7 @@ export {
   Button,
   Input,
   Account,
-  BackArrowButton
+  BackArrowButton,
+  Description,
+  BookDetails
 };
