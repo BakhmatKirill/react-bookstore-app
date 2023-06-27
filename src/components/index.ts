@@ -22,6 +22,7 @@ import { BackArrowButton } from "./BackArrowButton/BackArrowButton";
 import { Description } from "./Description/Description";
 import { BookDetails } from "./BookDetails/BookDetails";
 import { FavoriteItem } from "./FavoriteItem/FavoriteItem";
+import { CartItem } from "./CartItem/CartItem";
 
 export { 
   Layout,
@@ -47,5 +48,6 @@ export {
   BackArrowButton,
   Description,
   BookDetails,
-  FavoriteItem
+  FavoriteItem,
+  CartItem
 };
