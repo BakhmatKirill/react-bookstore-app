@@ -21,6 +21,7 @@ import { Account } from "./Account/Account";
 import { BackArrowButton } from "./BackArrowButton/BackArrowButton";
 import { Description } from "./Description/Description";
 import { BookDetails } from "./BookDetails/BookDetails";
+import { FavoriteItem } from "./FavoriteItem/FavoriteItem";
 
 export { 
   Layout,
@@ -45,5 +46,6 @@ export {
   Account,
   BackArrowButton,
   Description,
-  BookDetails
+  BookDetails,
+  FavoriteItem
 };
