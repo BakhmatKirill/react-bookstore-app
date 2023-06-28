@@ -26,6 +26,7 @@ import { HeaderControl } from "./HeaderControl/HeaderControl";
 import { StarsRating } from "./StarsRating/StarsRating";
 import { Pagination } from "./Pagination/Pagination";
 import { DetailsTabs } from "./DetailsTabs/DetailsTabs";
+import { DetailsSlider } from "./DetailsSlider/DetailsSlider";
 
 export { 
   Layout,
@@ -55,5 +56,6 @@ export {
   HeaderControl,
   StarsRating,
   Pagination,
-  DetailsTabs
+  DetailsTabs,
+  DetailsSlider
 };
