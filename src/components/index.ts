@@ -25,6 +25,7 @@ import { CartItem } from "./CartItem/CartItem";
 import { HeaderControl } from "./HeaderControl/HeaderControl";
 import { StarsRating } from "./StarsRating/StarsRating";
 import { Pagination } from "./Pagination/Pagination";
+import { DetailsTabs } from "./DetailsTabs/DetailsTabs";
 
 export { 
   Layout,
@@ -53,5 +54,6 @@ export {
   CartItem,
   HeaderControl,
   StarsRating,
-  Pagination
+  Pagination,
+  DetailsTabs
 };
