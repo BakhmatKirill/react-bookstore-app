@@ -13,7 +13,6 @@ import { BooksList } from "./BooksList/BooksList";
 import { BookListItem } from "./BookListItem/BookListItem";
 import { Mailing } from "./Mailing/Mailing";
 import { NewBooks } from "./NewBooks/NewBooks";
-import { Menu } from "./Menu/Menu";
 import { CustomNavLink } from "components/CustomNavLink/CustomNavLink";
 import { Button } from "./Button/Button";
 import { Input } from "./Input/Input";
@@ -23,6 +22,7 @@ import { Description } from "./Description/Description";
 import { BookDetails } from "./BookDetails/BookDetails";
 import { FavoriteItem } from "./FavoriteItem/FavoriteItem";
 import { CartItem } from "./CartItem/CartItem";
+import { HeaderControl } from "./HeaderControl/HeaderControl";
 
 export { 
   Layout,
@@ -40,7 +40,6 @@ export {
   Search,
   ThemeChanger,
   NewBooks,
-  Menu,
   CustomNavLink,
   Button,
   Input,
@@ -49,5 +48,6 @@ export {
   Description,
   BookDetails,
   FavoriteItem,
-  CartItem
+  CartItem,
+  HeaderControl
 };
