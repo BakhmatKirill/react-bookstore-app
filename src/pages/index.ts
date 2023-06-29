@@ -7,6 +7,7 @@ import { AccountPage } from "./AccountPage/AccountPage";
 import { SignPage } from "./SignPage/SignPage";
 import { ResetPage } from "./ResetPage/ResetPage";
 import { ForgotPage } from "./ForgotPage/ForgotPage";
+import { ErrorPage } from "./ErrorPage/ErrorPage";
 
 export {
   HomePage,
@@ -17,5 +18,6 @@ export {
   AccountPage,
   SignPage,
   ResetPage,
-  ForgotPage
+  ForgotPage,
+  ErrorPage
 };
