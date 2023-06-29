@@ -27,6 +27,8 @@ import { StarsRating } from "./StarsRating/StarsRating";
 import { Pagination } from "./Pagination/Pagination";
 import { DetailsTabs } from "./DetailsTabs/DetailsTabs";
 import { DetailsSlider } from "./DetailsSlider/DetailsSlider";
+import { Forgot } from "./Forgot/Forgot";
+import { Reset } from "./Reset/Reset";
 
 export { 
   Layout,
@@ -57,5 +59,7 @@ export {
   StarsRating,
   Pagination,
   DetailsTabs,
-  DetailsSlider
+  DetailsSlider,
+  Forgot,
+  Reset
 };
