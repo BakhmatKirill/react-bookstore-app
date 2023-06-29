@@ -9,6 +9,7 @@ import {
   ResetPage,
   SearchPage,
   SignPage,
+  ForgotPage,
 } from "pages";
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import { ROUTE } from "./routes";
@@ -26,6 +27,7 @@ export const router = createBrowserRouter(
         <Route path={ROUTE.CART} element={<CartPage />} />
         <Route path={ROUTE.ACCOUNT} element={<AccountPage />} />
         <Route path={ROUTE.RESET} element={<ResetPage />} />
+        <Route path={ROUTE.FORGOT} element={<ForgotPage />} />
       </Route>
     </Route>,
   ),
