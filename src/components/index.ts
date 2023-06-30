@@ -30,6 +30,8 @@ import { DetailsSlider } from "./DetailsSlider/DetailsSlider";
 import { Forgot } from "./Forgot/Forgot";
 import { Reset } from "./Reset/Reset";
 import { CartTotalPrice } from "./CartTotalPrice/CartTotalPrice";
+import { Notice } from "./Notice/Notice";
+import { Portal } from "./Portal/Portal";
 
 export { 
   Layout,
@@ -63,5 +65,7 @@ export {
   DetailsSlider,
   Forgot,
   Reset,
-  CartTotalPrice
+  CartTotalPrice,
+  Notice,
+  Portal
 };

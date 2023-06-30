@@ -4,6 +4,7 @@ import { ResetCSS } from "./resetCSS";
 import { Typography } from "./typography";
 import { DarkTheme, LightTheme } from "./theme";
 import { GlobalStyles, Wrapper } from "./globalStyles";
+import { TargetPortal } from "./portals";
 
 export {
   Color,
@@ -13,5 +14,6 @@ export {
   DarkTheme,
   LightTheme,
   GlobalStyles,
-  Wrapper
+  Wrapper,
+  TargetPortal
 };
