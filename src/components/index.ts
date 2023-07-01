@@ -12,7 +12,6 @@ import { SignUp } from "./SignUp/SignUp";
 import { BooksList } from "./BooksList/BooksList";
 import { BookListItem } from "./BookListItem/BookListItem";
 import { Mailing } from "./Mailing/Mailing";
-import { NewBooks } from "./NewBooks/NewBooks";
 import { CustomNavLink } from "components/CustomNavLink/CustomNavLink";
 import { Button } from "./Button/Button";
 import { Input } from "./Input/Input";
@@ -49,7 +48,6 @@ export {
   HeaderNavigation,
   Search,
   ThemeChanger,
-  NewBooks,
   CustomNavLink,
   Button,
   Input,
