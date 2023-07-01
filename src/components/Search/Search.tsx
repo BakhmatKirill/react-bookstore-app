@@ -1,38 +1,46 @@
-import { ChangeEvent, useEffect, useState } from "react";
-import { feachSearchBooks, getSearchBooks, useAppDispatch, useAppSelector } from "store";
-import { StyledSearch, SearchButton, SearchWrapper } from "./styles";
 import { SearchIcon } from "assets";
+import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
+import { SearchButton, SearchWrapper, StyledSearch } from "./styles";
 
 interface IProps {
-  type: string;
-  value: string;
-  placeholder: string;
-  onChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  closeBurger: () => void;
 }
 
-export const Search = ({ placeholder, type, value, onChange }: IProps) => {
-  const [params, setParams] = useState({
-    searchValue: "",
-    page: "",
+export const Search = ({ closeBurger }: IProps) => {
+  const navigate = useNavigate();
+
+  const { register, watch } = useForm({
+    defaultValues: {
+      search: "",
+    },
   });
 
-  const dispatch = useAppDispatch();
-  const { result, isLoading } = useAppSelector(getSearchBooks);
+  const value = watch("search");
 
-  useEffect(() => {
-    dispatch(feachSearchBooks(params));
-  }, [dispatch, params]);
-
-  const { books, page, error, total } = result;
-
-  const handleParams = () => {
-    setParams({ searchValue: value, page: "1" });
+  const handleSearchButton = () => {
+    navigate(`search/${value}/1`);
   };
 
   return (
     <SearchWrapper>
-      <StyledSearch type={type} placeholder={placeholder} value={value} onChange={onChange} />
-      <SearchButton onClick={handleParams}>
+      <StyledSearch
+        type="text"
+        placeholder="Search"
+        {...register("search", {
+          required: {
+            value: true,
+            message: "Please, enter a value",
+          },
+        })}
+      />
+      <SearchButton
+        onClick={() => {
+          handleSearchButton();
+          closeBurger();
+        }}
+        whileHover={{ scale: 1.1 }}
+      >
         <SearchIcon />
       </SearchButton>
     </SearchWrapper>
