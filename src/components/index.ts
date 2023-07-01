@@ -32,6 +32,7 @@ import { Reset } from "./Reset/Reset";
 import { CartTotalPrice } from "./CartTotalPrice/CartTotalPrice";
 import { Notice } from "./Notice/Notice";
 import { Portal } from "./Portal/Portal";
+import { ProgressBar } from "./ProgressBar/ProgressBar";
 
 export { 
   Layout,
@@ -67,5 +68,6 @@ export {
   Reset,
   CartTotalPrice,
   Notice,
-  Portal
+  Portal,
+  ProgressBar
 };
