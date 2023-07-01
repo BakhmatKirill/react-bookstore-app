@@ -1,10 +1,15 @@
-import { Account } from "components";
+import { Account, BackArrowButton, Title } from "components";
+import { getUser, useAppSelector } from "store";
 import { StyledAccount } from "./styles";
 
 export const AccountPage = () => {
+  const { name, email, password } = useAppSelector(getUser);
+
   return (
     <StyledAccount>
-      <Account />
+      <BackArrowButton />
+      <Title text="Account" />
+      <Account name={name} email={email} password={password} />
     </StyledAccount>
   );
 };
