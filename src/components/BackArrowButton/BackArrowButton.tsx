@@ -1,5 +1,5 @@
 import { BackArrowIcon } from "assets";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { Color } from "ui";
 import { StyledArrow } from "./styles";
 
