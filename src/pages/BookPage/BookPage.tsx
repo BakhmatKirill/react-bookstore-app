@@ -1,6 +1,6 @@
 import { BookDetails, Mailing, Title } from "components";
 import { useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import {
   addBook,
   addFavorite,

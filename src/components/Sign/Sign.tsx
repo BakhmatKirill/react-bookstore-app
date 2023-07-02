@@ -1,5 +1,5 @@
 import { SignIn, SignUp } from "components";
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { AnimatePresence, LayoutGroup } from "framer-motion";
 import { useState } from "react";
 import { SignItem, SignNavigation, StyledSign } from "./styles";
 
@@ -15,7 +15,7 @@ export const Sign = () => {
   };
 
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <StyledSign
         layout
         initial={{ y: -100, opacity: 0 }}
@@ -32,6 +32,6 @@ export const Sign = () => {
         </SignNavigation>
         <AnimatePresence initial={false}>{isSign ? <SignIn /> : <SignUp />}</AnimatePresence>
       </StyledSign>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
