@@ -32,7 +32,7 @@ export const SearchPage = () => {
       return newOffset;
     });
 
-    navigate(`/search/${searchValue}/${newOffset}`);
+    navigate(`/react-bookstore-app/search/${searchValue}/${newOffset}`);
 
     window.scrollTo({
       top: 0,
