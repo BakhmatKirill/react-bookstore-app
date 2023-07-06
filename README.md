@@ -91,11 +91,19 @@ npm start
 
 #### Cart page
 
+![Image](https://github.com/BakhmatKirill/react-bookstore-app/blob/main/preview/react-bookstore-app_cart.png)
+
 #### Favorites page
+
+![Image](https://github.com/BakhmatKirill/react-bookstore-app/blob/main/preview/react-bookstore-app_favorites_dark.png)
 
 #### Book details page
 
+![Image](https://github.com/BakhmatKirill/react-bookstore-app/blob/main/preview/react-bookstore-app_detailes.png)
+
 #### Account page
+
+![Image](https://github.com/BakhmatKirill/react-bookstore-app/blob/main/preview/react-bookstore-app_account.png)
 
 Try this app -> [DEMO](https://bakhmatkirill.github.io/react-bookstore-app/)
 
